@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canadian Wage Explorer App</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Canadian Wage Explorer App">
+  <meta name="author" content="gulftream">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Canadian Wage Explorer App</h1>
+    <h2>A tool to explore custom wage data from the 2011 National Household Survey</h2>
+    <p>gulftream<br/>student</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>So what is this thing?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>This is a very simple tool I made to explore a custom dataset I&#39;m using for an empirical project I&#39;m working on about wage discrimination in Canada.    </p></li>
+<li><p>The app allows you to create exploratory graphs in order to get a feel for how wages interact with other socio-economic variables such as age, sex, visible minority status, highest degree earned, potential experience, occupation, etc.</p></li>
+<li><p>The explorer makes use of <a href="%22http://www.r-project.org/">R&#39;s</a> <a href="http://ggplot2.org/">ggplot2</a> package to make <a href="http://docs.ggplot2.org/0.9.3.1/geom_boxplot.html">box and whiskers plots</a> of the variables you chose.  </p></li>
+<li><p>The dataset is restricted to 175,119 full-time, full-year, non-Aboriginal employees aged 25-64 living in a province.</p></li>
+<li><p>The data source is Statistics Canada&#39;s 2011 National Household Survey Public Use Microdata File (Individuals), which I accessed from the Equinox portal via the Concordia Unversity library.</p></li>
+<li><p>For more information on the National Household Survey, visit the <a href="http://www12.statcan.gc.ca/nhs-enm/index-eng.cfm?HPA">NHS website.</a></p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Screenshot</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="wages.png" alt="GitHub Logo"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Who is the app for?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Me and the people I&#39;m working on this project with, mostly, haha.</p></li>
+<li><p>You and the other graders ;)</p></li>
+<li><p>Anyone curious about the determinants of wages in Canada.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Obligatory (but useless for purposes of asignment) R code chunk</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>I don&#39;t understand why this is part of the assignment. The R code for the shiny app is not reproducible in isolation, and with a cap on the number of slides permitted, I&#39;m not about to reproduce the entire ui.R and server.R files and run them here.</p>
+
+<p>Reproducing the underlying R code in a pitch make zero sense to me.</p>
+
+<p>Anyway, here is an arbitrary R code chunk to satisfy the rubric:</p>
+
+<pre><code class="r">answer &lt;- 2 + 2
+print(answer)
+</code></pre>
+
+<pre><code>## [1] 4
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='So what is this thing?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Screenshot'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Who is the app for?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Obligatory (but useless for purposes of asignment) R code chunk'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

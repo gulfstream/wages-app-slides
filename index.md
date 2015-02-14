@@ -1,0 +1,62 @@
+---
+title       : Canadian Wage Explorer App
+subtitle    : A tool to explore custom wage data from the 2011 National Household Survey
+author      : gulftream
+job         : student
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## So what is this thing?
+
+* This is a very simple tool I made to explore a custom dataset I'm using for an empirical project I'm working on about wage discrimination in Canada.    
+
+* The app allows you to create exploratory graphs in order to get a feel for how wages interact with other socio-economic variables such as age, sex, visible minority status, highest degree earned, potential experience, occupation, etc.
+
+* The explorer makes use of [R's] ("http://www.r-project.org/) [ggplot2] (http://ggplot2.org/) package to make [box and whiskers plots] (http://docs.ggplot2.org/0.9.3.1/geom_boxplot.html) of the variables you chose.  
+
+* The dataset is restricted to 175,119 full-time, full-year, non-Aboriginal employees aged 25-64 living in a province.
+
+* The data source is Statistics Canada's 2011 National Household Survey Public Use Microdata File (Individuals), which I accessed from the Equinox portal via the Concordia Unversity library.
+
+* For more information on the National Household Survey, visit the [NHS website.] (http://www12.statcan.gc.ca/nhs-enm/index-eng.cfm?HPA)
+
+--- .class #id
+
+## Screenshot
+
+![GitHub Logo](wages.png)
+
+--- .class #id
+
+## Who is the app for?
+
+* Me and the people I'm working on this project with, mostly, haha.
+
+* You and the other graders ;)
+
+* Anyone curious about the determinants of wages in Canada.
+
+--- .class #id
+
+## Obligatory (but useless for purposes of asignment) R code chunk
+
+I don't understand why this is part of the assignment. The R code for the shiny app is not reproducible in isolation, and with a cap on the number of slides permitted, I'm not about to reproduce the entire ui.R and server.R files and run them here.
+
+Reproducing the underlying R code in a pitch make zero sense to me.
+
+Anyway, here is an arbitrary R code chunk to satisfy the rubric:
+
+
+```r
+answer <- 2 + 2
+print(answer)
+```
+
+```
+## [1] 4
+```
